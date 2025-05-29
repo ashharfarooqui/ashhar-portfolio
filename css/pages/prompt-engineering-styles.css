@@ -1,0 +1,773 @@
+/* Prompt Engineering Page Custom Styles */
+
+/* Common Section Styling */
+.pe-intro,
+.pe-approach,
+.prompt-techniques,
+.pe-projects,
+.case-studies,
+.resources-section {
+    padding: 3rem 0;
+    background-color: var(--background-dark);
+    position: relative;
+}
+
+.pe-intro::before,
+.pe-approach::before,
+.prompt-techniques::before,
+.pe-projects::before,
+.case-studies::before,
+.resources-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+}
+
+.section-title {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    position: relative;
+    font-size: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 0.75rem auto 0;
+}
+
+/* Introduction Section Update - Featured Article Style */
+.pe-intro {
+    background: none;
+    color: var(--text-primary);
+}
+
+.pe-intro .container {
+    position: relative;
+}
+
+.pe-intro .section-header {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.pe-intro .section-header h2 {
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+    color: var(--text-primary);
+    position: relative;
+}
+
+.pe-intro .section-header h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 0.75rem auto 0;
+}
+
+.pe-intro .section-header p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pe-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    background-color: var(--background-card);
+    border-radius: var(--border-radius-md);
+    border-top: 3px solid #ec4899; /* Pink - for prompt engineering */
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pe-intro-grid:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-glow);
+}
+
+.pe-intro-visual {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    border-top: none;
+    box-shadow: none;
+}
+
+.pe-intro-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.pe-intro-grid:hover .pe-intro-visual img {
+    transform: scale(1.05);
+}
+
+.pe-intro-text {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pe-intro-text h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+
+.pe-intro-text p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.pe-intro-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.pe-intro-meta div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pe-intro-meta i {
+    color: var(--primary-color);
+}
+
+.pe-cta {
+    margin-top: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.pe-cta .btn {
+    align-self: flex-start;
+}
+
+/* PE Approach Section - Convert to Timeline */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.approach-item {
+    background-color: var(--background-card);
+    border-radius: var(--border-radius-md);
+    border-top: 3px solid #3b82f6; /* Blue - for methodology */
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+.approach-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-glow);
+}
+
+.approach-item .approach-icon {
+    display: none;
+}
+
+.approach-item h3 {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 0 var(--border-radius-sm) 0;
+}
+
+.approach-item p {
+    padding: 1.25rem;
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.approach-item::before {
+    content: '\f0b1'; /* briefcase icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+.approach-item:nth-child(1)::before {
+    content: '\f5da'; /* project diagram icon */
+}
+
+.approach-item:nth-child(2)::before {
+    content: '\f126'; /* code branch icon */
+}
+
+.approach-item:nth-child(3)::before {
+    content: '\f0c3'; /* flask icon */
+}
+
+.approach-item:nth-child(4)::before {
+    content: '\f0e8'; /* sitemap icon */
+}
+
+/* Prompt Techniques Section */
+.techniques-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.technique-card {
+    background-color: var(--background-card);
+    border-radius: var(--border-radius-md);
+    border-top: 3px solid #ec4899; /* Pink - for prompt engineering */
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+
+.technique-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-glow);
+}
+
+.technique-card h3 {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 0 var(--border-radius-sm) 0;
+}
+
+.technique-card p {
+    padding: 1.25rem;
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.technique-example {
+    padding: 0 1.25rem 1.25rem;
+    display: none;
+}
+
+.technique-card:nth-child(1)::before {
+    content: '\f0cb'; /* list icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+.technique-card:nth-child(2)::before {
+    content: '\f507'; /* user-tie icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+.technique-card:nth-child(3)::before {
+    content: '\f51c'; /* lightbulb icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+.technique-card:nth-child(4)::before {
+    content: '\f074'; /* random icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+/* PE Projects Section */
+.prompt-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.prompt-category {
+    background-color: var(--background-card);
+    border-radius: var(--border-radius-md);
+    border-top: 3px solid var(--primary-color);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Project Category Color Coding */
+.prompt-category:nth-child(1) {
+    border-top-color: #ec4899; /* Pink - for prompt framework */
+}
+
+.prompt-category:nth-child(2) {
+    border-top-color: #f59e0b; /* Amber - for fine-tuning */
+}
+
+.prompt-category:nth-child(3) {
+    border-top-color: #10b981; /* Green - for data processing */
+}
+
+.prompt-category:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-glow);
+}
+
+.category-image {
+    display: block;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.prompt-category:hover .category-image img {
+    transform: scale(1.05);
+}
+
+.prompt-category h3 {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 0 var(--border-radius-sm) 0;
+}
+
+.prompt-category p {
+    padding: 1.25rem 1.25rem 0.5rem;
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.prompt-category .btn {
+    margin: 0 1.25rem 1.25rem;
+    align-self: flex-start;
+}
+
+.prompt-category:nth-child(1)::before {
+    content: '\f15c'; /* file-alt icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+.prompt-category:nth-child(2)::before {
+    content: '\f044'; /* edit icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+.prompt-category:nth-child(3)::before {
+    content: '\f1c0'; /* database icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+/* Case Studies Section */
+.case-study {
+    background-color: var(--background-card);
+    border-radius: var(--border-radius-md);
+    border-top: 3px solid var(--primary-color);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+/* Case Studies Color Coding */
+.case-study:nth-child(1) {
+    border-top-color: #3b82f6; /* Blue - for finance */
+}
+
+.case-study:nth-child(3) {
+    border-top-color: #10b981; /* Green - for healthcare */
+}
+
+.case-study:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-glow);
+}
+
+.case-study-header h3 {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 0 var(--border-radius-sm) 0;
+}
+
+.case-meta {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem;
+    font-style: italic;
+}
+
+.case-study-content {
+    padding: 0 1.25rem 1.25rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.case-challenge h4,
+.case-solution h4,
+.case-results h4 {
+    color: var(--accent-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.case-challenge h4::before,
+.case-solution h4::before,
+.case-results h4::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.case-challenge p,
+.case-solution p,
+.case-results p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.case-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+    margin: 2rem 0;
+    opacity: 0.5;
+    display: block;
+}
+
+.case-solution ul {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.case-solution li {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.case-study:nth-child(1)::before {
+    content: '\f080'; /* chart-bar icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+.case-study:nth-child(3)::before {
+    content: '\f6e6'; /* medkit icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+/* Resources Section */
+.resource-card {
+    background-color: var(--background-card);
+    border-radius: var(--border-radius-md);
+    border-top: 3px solid var(--primary-color);
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+
+/* Resources Color Coding */
+.resource-card:nth-child(1) {
+    border-top-color: #ec4899; /* Pink - for reading */
+}
+
+.resource-card:nth-child(2) {
+    border-top-color: #3b82f6; /* Blue - for tools */
+}
+
+.resource-card:nth-child(3) {
+    border-top-color: #f59e0b; /* Amber - for courses */
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-glow);
+}
+
+.resource-icon {
+    display: none;
+}
+
+.resource-card h3 {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 0 var(--border-radius-sm) 0;
+}
+
+.resource-card ul {
+    padding: 1.25rem;
+    margin: 0;
+    list-style-type: none;
+}
+
+.resource-card li {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.resource-card li:last-child {
+    margin-bottom: 0;
+}
+
+.resource-card li:before {
+    content: '\f054'; /* chevron-right icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 0.75rem;
+}
+
+.resource-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.resource-card a:hover {
+    color: var(--accent-light);
+    text-decoration: underline;
+}
+
+.resource-card:nth-child(1)::before {
+    content: '\f02d'; /* book icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+.resource-card:nth-child(2)::before {
+    content: '\f7d9'; /* tools icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+.resource-card:nth-child(3)::before {
+    content: '\f19d'; /* graduation-cap icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-size: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .pe-intro-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pe-intro-visual {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .approach-grid,
+    .techniques-grid,
+    .prompt-categories,
+    .case-study-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .pe-intro-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .pe-intro-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    
+    .pe-intro-visual {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .approach-item p,
+    .technique-card p,
+    .prompt-category p,
+    .case-challenge p,
+    .case-solution p,
+    .case-results p,
+    .resource-card li,
+    .pe-intro-text p {
+        font-size: 0.85rem;
+    }
+    
+    .case-study-content {
+        padding: 0 1rem 1rem;
+    }
+    
+    .pe-cta {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+} 

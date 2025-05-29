@@ -1,0 +1,74 @@
+/* Icon Fixes */
+
+/* Font Awesome icon alignment fixes */
+.fa,
+.fas,
+.far,
+.fab {
+    vertical-align: middle;
+}
+
+/* Button icon spacing */
+button .fa,
+button .fas,
+button .far,
+button .fab,
+.btn .fa,
+.btn .fas,
+.btn .far,
+.btn .fab {
+    margin-right: 0.5rem;
+}
+
+/* Right aligned icons */
+.icon-right .fa,
+.icon-right .fas,
+.icon-right .far,
+.icon-right .fab,
+button.icon-right .fa,
+button.icon-right .fas,
+button.icon-right .far,
+button.icon-right .fab,
+.btn.icon-right .fa,
+.btn.icon-right .fas,
+.btn.icon-right .far,
+.btn.icon-right .fab {
+    margin-right: 0;
+    margin-left: 0.5rem;
+}
+
+/* Icon size classes */
+.icon-sm {
+    font-size: 0.875rem;
+}
+
+.icon-md {
+    font-size: 1.25rem;
+}
+
+.icon-lg {
+    font-size: 1.5rem;
+}
+
+.icon-xl {
+    font-size: 2rem;
+}
+
+/* Icon buttons */
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--background-light);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.icon-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+} 

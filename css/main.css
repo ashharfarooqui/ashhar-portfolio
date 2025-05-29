@@ -1,0 +1,25 @@
+/* Main CSS - Import all component files */
+
+/* First import modern-styles.css which has all the CSS variables */
+@import 'modern-styles.css';
+
+/* Base Styles */
+@import 'base/globals.css';
+
+/* Components */
+@import 'components/navigation.css';
+@import 'components/hero.css';
+@import 'components/footer.css';
+
+/* Utility */
+@import 'utils/icon-fixes.css'; /* For icon fixes */
+@import 'utils/image-styles.css'; /* For image styles */
+
+/* 
+This main CSS file acts as an entry point that imports all 
+modular components. Using CSS imports allows us to maintain a
+modular file system while serving a single CSS file to the browser.
+
+Individual page CSS files are still loaded separately to keep them
+specific to those pages.
+*/ 
