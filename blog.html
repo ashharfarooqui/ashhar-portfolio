@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Ashhar Farooqui</title>
+    <!-- Use the new main CSS file that imports all components -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Page specific CSS -->
+    <link rel="stylesheet" href="css/pages/blog-styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="blog-page">
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Ashhar Farooqui</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="prompt-engineering.html">Prompt Engineering</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-toggle-wrapper">
+                <div class="theme-toggle" id="themeToggle"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="hero page-banner">
+        <div class="hero-animation">
+            <div class="network-animation" id="networkAnimation"></div>
+        </div>
+        <div class="banner-content">
+            <h1 class="animate-fadeIn">Data Science Blog</h1>
+            <p class="animate-fadeIn delay-1">Insights, tutorials, and reflections on data science, machine learning, and AI</p>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Article</h2>
+                <p>My latest and most insightful writing</p>
+            </div>
+            
+            <div class="featured-article-container">
+                <div class="featured-article-image">
+                    <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Advanced Prompt Engineering Techniques">
+                </div>
+                
+                <div class="featured-article-content">
+                    <div class="featured-article-meta">
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>May 15, 2025</span>
+                        </div>
+                        <div class="category">
+                            <i class="far fa-folder"></i>
+                            <span>Prompt Engineering</span>
+                        </div>
+                        <div class="read-time">
+                            <i class="far fa-clock"></i>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                    
+                    <h2>Advanced Prompt Engineering Techniques for Large Language Models</h2>
+                    <p>In this comprehensive guide, I explore the cutting-edge techniques that are pushing the boundaries of what's possible with Large Language Models. From chain-of-thought prompting to advanced few-shot learning frameworks, these methods are revolutionizing how we interact with AI systems.</p>
+                    <p>I'll share insights from my own experiments with GPT-4, Claude, and other frontier models, complete with practical examples you can adapt for your own applications.</p>
+                    
+                    <a href="#" class="btn primary-btn">Read Full Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="blog-posts-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Articles</h2>
+                <p>Explore my writings on data science, machine learning, and AI</p>
+            </div>
+            
+            <div class="blog-filters">
+                <button class="blog-filter-btn active" data-filter="all">All</button>
+                <button class="blog-filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="blog-filter-btn" data-filter="data-analysis">Data Analysis</button>
+                <button class="blog-filter-btn" data-filter="prompt-engineering">Prompt Engineering</button>
+                <button class="blog-filter-btn" data-filter="tutorials">Tutorials</button>
+            </div>
+            
+            <div class="blog-posts-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card" data-category="machine-learning">
+                    <div class="blog-image">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Neural Networks Explained">
+                        </a>
+                    </div>
+                    <div class="blog-meta">
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>April 28, 2025</span>
+                        </div>
+                        <div class="read-time">
+                            <i class="far fa-clock"></i>
+                            <span>6 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Neural Networks Explained: Demystifying Deep Learning for Beginners</a></h3>
+                        <p>A beginner-friendly explanation of neural networks, breaking down complex concepts into digestible parts with visual examples and intuitive analogies.</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="blog-tags">
+                                <span class="blog-tag">ML</span>
+                                <span class="blog-tag">Tutorial</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="blog-card" data-category="data-analysis">
+                    <div class="blog-image">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Data Visualization">
+                        </a>
+                    </div>
+                    <div class="blog-meta">
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>April 15, 2025</span>
+                        </div>
+                        <div class="read-time">
+                            <i class="far fa-clock"></i>
+                            <span>5 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">5 Data Visualization Techniques That Will Transform Your Analysis</a></h3>
+                        <p>Learn how to choose the right visualization methods to uncover hidden patterns and communicate insights effectively to both technical and non-technical stakeholders.</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="blog-tags">
+                                <span class="blog-tag">Visualization</span>
+                                <span class="blog-tag">Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="blog-card" data-category="prompt-engineering">
+                    <div class="blog-image">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Prompt Engineering">
+                        </a>
+                    </div>
+                    <div class="blog-meta">
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>March 22, 2025</span>
+                        </div>
+                        <div class="read-time">
+                            <i class="far fa-clock"></i>
+                            <span>7 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">The Art of Chain-of-Thought Prompting: A Complete Guide</a></h3>
+                        <p>Discover how to craft prompts that guide LLMs through explicit reasoning steps, dramatically improving their problem-solving capabilities on complex tasks.</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="blog-tags">
+                                <span class="blog-tag">LLMs</span>
+                                <span class="blog-tag">AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 4 -->
+                <article class="blog-card" data-category="machine-learning">
+                    <div class="blog-image">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Time Series Forecasting">
+                        </a>
+                    </div>
+                    <div class="blog-meta">
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>March 10, 2025</span>
+                        </div>
+                        <div class="read-time">
+                            <i class="far fa-clock"></i>
+                            <span>10 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Time Series Forecasting: From ARIMA to Transformers</a></h3>
+                        <p>An in-depth comparison of classical statistical methods and modern deep learning approaches for time series prediction, with implementation examples in Python.</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="blog-tags">
+                                <span class="blog-tag">Time Series</span>
+                                <span class="blog-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 5 -->
+                <article class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Feature Engineering">
+                        </a>
+                    </div>
+                    <div class="blog-meta">
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>February 28, 2025</span>
+                        </div>
+                        <div class="read-time">
+                            <i class="far fa-clock"></i>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Feature Engineering Techniques That Boost Model Performance</a></h3>
+                        <p>Learn practical feature engineering methods that can significantly improve your machine learning models, with code examples and performance benchmarks.</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="blog-tags">
+                                <span class="blog-tag">Features</span>
+                                <span class="blog-tag">ML Pipeline</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 6 -->
+                <article class="blog-card" data-category="data-analysis">
+                    <div class="blog-image">
+                        <a href="#">
+                            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="SQL Tips">
+                        </a>
+                    </div>
+                    <div class="blog-meta">
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>February 15, 2025</span>
+                        </div>
+                        <div class="read-time">
+                            <i class="far fa-clock"></i>
+                            <span>6 min read</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Advanced SQL Techniques Every Data Scientist Should Know</a></h3>
+                        <p>Explore powerful SQL patterns beyond the basics that can make your data analysis more efficient, including window functions, CTEs, and advanced joins.</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="blog-tags">
+                                <span class="blog-tag">SQL</span>
+                                <span class="blog-tag">Database</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="blog-pagination">
+                <button class="blog-pagination-btn active">1</button>
+                <button class="blog-pagination-btn">2</button>
+                <button class="blog-pagination-btn">3</button>
+                <button class="blog-pagination-btn"><i class="fas fa-ellipsis-h"></i></button>
+                <button class="blog-pagination-btn">7</button>
+                <button class="blog-pagination-btn"><i class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h2>Subscribe to My Newsletter</h2>
+                    <p>Stay updated with the latest articles, tutorials, and insights in data science, machine learning, and AI. No spam, just valuable content delivered straight to your inbox.</p>
+                </div>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email address" required>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Ashhar Farooqui</h3>
+                <p>Data Scientist & Prompt Engineer</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                        <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                        <li><a href="mailto:your.email@example.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ashhar Farooqui. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/components/hero-animation.js"></script>
+    <script src="js/components/footer.js"></script>
+    
+</body>
+</html> 

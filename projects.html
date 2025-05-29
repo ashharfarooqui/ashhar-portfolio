@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ashhar Farooqui</title>
+    <!-- Use the new main CSS file that imports all components -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Page specific CSS -->
+    <link rel="stylesheet" href="css/pages/projects-styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="projects-page">
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Ashhar Farooqui</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="prompt-engineering.html">Prompt Engineering</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-toggle-wrapper">
+                <div class="theme-toggle" id="themeToggle"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero page-banner">
+        <div class="hero-animation">
+            <div class="network-animation" id="networkAnimation"></div>
+        </div>
+        <div class="banner-content">
+            <h1 class="animate-fadeIn">Projects</h1>
+            <p class="animate-fadeIn delay-1">Explore my data science projects across various domains and technologies</p>
+        </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="project-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="project-filter-btn active" data-filter="all">All Projects</button>
+                <button class="project-filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="project-filter-btn" data-filter="data-viz">Data Visualization</button>
+                <button class="project-filter-btn" data-filter="nlp">NLP</button>
+                <button class="project-filter-btn" data-filter="deep-learning">Deep Learning</button>
+                <button class="project-filter-btn" data-filter="prompt-engineering">Prompt Engineering</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card machine-learning data-viz">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Predictive Sales Analysis">
+                    </div>
+                    <div class="project-info">
+                        <h3>Predictive Sales Analysis</h3>
+                        <p>Machine learning model to predict retail sales trends with 92% accuracy using time series analysis and ensemble methods</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>scikit-learn</span>
+                            <span>Pandas</span>
+                            <span>XGBoost</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/predictive-sales.html" class="btn small-btn">View Details</a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card data-viz">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Customer Segmentation Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Segmentation Dashboard</h3>
+                        <p>Interactive dashboard visualizing customer segments using clustering algorithms, helping identify high-value customer groups</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Tableau</span>
+                            <span>K-means</span>
+                            <span>Plotly</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/customer-segmentation.html" class="btn small-btn">View Details</a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card nlp deep-learning">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="NLP Text Classifier">
+                    </div>
+                    <div class="project-info">
+                        <h3>NLP Text Classifier</h3>
+                        <p>Deep learning model for multi-class text classification with BERT, achieving 88% accuracy on a complex dataset</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>BERT</span>
+                            <span>Hugging Face</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/nlp-classifier.html" class="btn small-btn">View Details</a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card prompt-engineering nlp">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1655713949210-40c0d7acb04a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Prompt Engineering Framework">
+                    </div>
+                    <div class="project-info">
+                        <h3>Prompt Engineering Framework</h3>
+                        <p>Developed a systematic approach for crafting effective LLM prompts, with case studies in data cleaning and analysis</p>
+                        <div class="project-tech">
+                            <span>GPT-4</span>
+                            <span>Python</span>
+                            <span>LangChain</span>
+                            <span>JSON</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/prompt-framework.html" class="btn small-btn">View Details</a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card machine-learning">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Anomaly Detection System">
+                    </div>
+                    <div class="project-info">
+                        <h3>Anomaly Detection System</h3>
+                        <p>Real-time anomaly detection system for IoT sensor data, reducing false positives by 63% compared to baseline methods</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Isolation Forest</span>
+                            <span>Kafka</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/anomaly-detection.html" class="btn small-btn">View Details</a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card deep-learning">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1664575196044-195f135226d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Image Classification CNN">
+                    </div>
+                    <div class="project-info">
+                        <h3>Image Classification CNN</h3>
+                        <p>Convolutional neural network for classifying medical images, with 91% accuracy in identifying disease markers</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>CNN</span>
+                            <span>Transfer Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/image-classification.html" class="btn small-btn">View Details</a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card prompt-engineering">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="LLM Fine-tuning Assistant">
+                    </div>
+                    <div class="project-info">
+                        <h3>LLM Fine-tuning Assistant</h3>
+                        <p>Tool for generating optimal fine-tuning datasets and prompts for domain-specific language model applications</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenAI API</span>
+                            <span>Streamlit</span>
+                            <span>YAML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/llm-assistant.html" class="btn small-btn">View Details</a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card data-viz">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Interactive Finance Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Finance Dashboard</h3>
+                        <p>Real-time dashboard for financial data visualization with predictive analytics integration</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>D3.js</span>
+                            <span>Flask</span>
+                            <span>SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/finance-dashboard.html" class="btn small-btn">View Details</a>
+                            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Single Project Template (Hidden) -->
+    <template id="project-template">
+        <section class="project-detail">
+            <div class="container">
+                <div class="project-header">
+                    <h1>Project Title</h1>
+                    <div class="project-meta">
+                        <span class="project-date">Completed: [Date]</span>
+                        <a href="#" class="github-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                        <a href="#" class="live-demo" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-content">
+                    <div class="project-gallery">
+                        <!-- Slider or main image -->
+                    </div>
+                    
+                    <div class="project-description">
+                        <h2>Description</h2>
+                        <p>Project description text...</p>
+                    </div>
+                    
+                    <div class="project-details">
+                        <div class="detail-section">
+                            <h3>Problem Statement</h3>
+                            <p>Problem statement text...</p>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Solution Approach</h3>
+                            <p>Approach description...</p>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Technologies Used</h3>
+                            <ul class="tech-list">
+                                <!-- Tech list items -->
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Key Features</h3>
+                            <ul class="feature-list">
+                                <!-- Feature list items -->
+                            </ul>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Results & Impact</h3>
+                            <p>Results description...</p>
+                        </div>
+                        
+                        <div class="detail-section">
+                            <h3>Code Snippet</h3>
+                            <pre><code>
+                                # Code example
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-nav">
+                    <a href="#" class="prev-project"><i class="fas fa-arrow-left"></i> Previous Project</a>
+                    <a href="projects.html" class="all-projects">All Projects</a>
+                    <a href="#" class="next-project">Next Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- Call to Action -->
+    <section class="contact-preview">
+        <div class="container">
+            <h2>Interested in Collaboration?</h2>
+            <p>I'm always open to new projects and opportunities. Let's discuss how data science can help your organization.</p>
+            <a href="contact.html" class="btn primary-btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Ashhar Farooqui</h3>
+                <p>Data Scientist & Prompt Engineer</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                        <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                        <li><a href="mailto:your.email@example.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ashhar Farooqui. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/components/hero-animation.js"></script>
+    <script src="js/components/footer.js"></script>
+    
+</body>
+</html> 

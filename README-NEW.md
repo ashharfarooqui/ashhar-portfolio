@@ -16,7 +16,6 @@ DataSciencePortfolio/
 ├── css/                    # CSS files
 │   ├── base/               # Base styles
 │   │   └── globals.css     # Global styles
-│   │   
 │   ├── components/         # Component styles
 │   │   ├── navigation.css  # Navigation styles
 │   │   ├── hero.css        # Hero section styles

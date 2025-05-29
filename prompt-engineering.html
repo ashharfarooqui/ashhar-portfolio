@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Engineering - Ashhar Farooqui</title>
+    <!-- Use the new main CSS file that imports all components -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Page specific CSS -->
+    <link rel="stylesheet" href="css/pages/prompt-engineering-styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Prism.js for code highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body class="prompt-page">
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Ashhar Farooqui</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="prompt-engineering.html" class="active">Prompt Engineering</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="theme-toggle-wrapper">
+                <div class="theme-toggle" id="themeToggle"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="hero page-banner">
+        <div class="hero-animation">
+            <div class="network-animation" id="networkAnimation"></div>
+        </div>
+        <div class="banner-content">
+            <h1 class="animate-fadeIn">Prompt Engineering</h1>
+            <p class="animate-fadeIn delay-1">Crafting effective prompts for large language models to solve complex problems</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="pe-intro">
+        <div class="container">
+            <div class="section-header">
+                <h2>Prompt Engineering</h2>
+                <p>The art and science of crafting effective instructions for AI language models</p>
+            </div>
+            
+            <div class="pe-intro-grid">
+                <div class="pe-intro-visual">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Prompt Engineering Concept">
+                </div>
+                
+                <div class="pe-intro-text">
+                    <div class="pe-intro-meta">
+                        <div class="expertise">
+                            <i class="far fa-lightbulb"></i>
+                            <span>Specialized Expertise</span>
+                        </div>
+                        <div class="models">
+                            <i class="far fa-keyboard"></i>
+                            <span>GPT-4, Claude, LLaMa</span>
+                        </div>
+                    </div>
+                    
+                    <h2>What is Prompt Engineering?</h2>
+                    <p>Prompt engineering is the art and science of designing effective instructions for AI language models to produce desired outputs. As a prompt engineer, I craft precise, context-rich queries that enable AI systems to generate accurate, relevant, and useful responses.</p>
+                    
+                    <p>In the era of GPT-4, Claude, and other advanced large language models (LLMs), prompt engineering has become a critical skill at the intersection of natural language processing, human-computer interaction, and domain expertise.</p>
+                    
+                    <div class="pe-cta">
+                        <a href="#pe-projects" class="btn primary-btn">View My Prompt Projects</a>
+                        <a href="#prompt-techniques" class="btn secondary-btn">Explore Techniques</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Approach Section -->
+    <section class="pe-approach">
+        <div class="container">
+            <h2 class="section-title">My Approach to Prompt Engineering</h2>
+            
+            <div class="approach-grid">
+                <div class="approach-item">
+                    <h3>Problem Analysis</h3>
+                    <p>I begin by deeply understanding the problem domain and defining clear objectives for what the AI should accomplish.</p>
+                </div>
+                
+                <div class="approach-item">
+                    <h3>Prompt Architecture</h3>
+                    <p>Designing structured prompts with the right context, format, and constraints to guide the model effectively.</p>
+                </div>
+                
+                <div class="approach-item">
+                    <h3>Iterative Testing</h3>
+                    <p>Continuous refinement based on output analysis, addressing hallucinations and improving accuracy.</p>
+                </div>
+                
+                <div class="approach-item">
+                    <h3>Chain of Thought</h3>
+                    <p>Implementing advanced techniques like reasoning chains, self-correction mechanisms, and systematic validation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prompt Techniques Section -->
+    <section class="prompt-techniques" id="prompt-techniques">
+        <div class="container">
+            <h2 class="section-title">Prompt Engineering Techniques</h2>
+            
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <h3>Chain of Thought (CoT)</h3>
+                    <p>Guiding the model through a step-by-step reasoning process, breaking complex problems into logical sequences.</p>
+                    <div class="technique-example">
+                        <h4>Example:</h4>
+                        <pre><code class="language-markdown">I need to solve a math problem.
+                        
+Let's think about this step-by-step:
+1. First, I'll identify the known variables
+2. Next, I'll determine the equation to use
+3. Then, I'll substitute the values
+4. Finally, I'll solve for the unknown</code></pre>
+                    </div>
+                </div>
+                
+                <div class="technique-card">
+                    <h3>Role Prompting</h3>
+                    <p>Assigning specific roles to the AI to frame responses from particular perspectives or expertise levels.</p>
+                    <div class="technique-example">
+                        <h4>Example:</h4>
+                        <pre><code class="language-markdown">Act as an expert data scientist with 15 years of experience in computer vision. Explain transfer learning in CNN models to a junior engineer who has basic Python knowledge but limited deep learning experience.</code></pre>
+                    </div>
+                </div>
+                
+                <div class="technique-card">
+                    <h3>Few-Shot Learning</h3>
+                    <p>Providing examples of desired input-output pairs to demonstrate the expected format and reasoning.</p>
+                    <div class="technique-example">
+                        <h4>Example:</h4>
+                        <pre><code class="language-markdown">Classify the sentiment of the following reviews as positive, negative, or neutral:
+
+Example 1:
+Review: "The service was quick and the staff was friendly."
+Sentiment: Positive
+
+Example 2:
+Review: "Food was cold and overpriced."
+Sentiment: Negative
+
+Now classify:
+Review: "The restaurant was busy but the ambiance was nice."
+Sentiment:</code></pre>
+                    </div>
+                </div>
+                
+                <div class="technique-card">
+                    <h3>ReAct Framework</h3>
+                    <p>Combining reasoning and acting in an iterative process for complex problem-solving tasks.</p>
+                    <div class="technique-example">
+                        <h4>Example:</h4>
+                        <pre><code class="language-markdown">Task: Find the population difference between Tokyo and Delhi.
+
+Thought: I need to find the populations of Tokyo and Delhi, then calculate the difference.
+Action: Search for Tokyo population
+Observation: Tokyo has a population of approximately 37 million in its metropolitan area.
+Thought: Now I need Delhi's population.
+Action: Search for Delhi population
+Observation: Delhi has a population of approximately 32 million in its metropolitan area.
+Thought: Now I can calculate the difference.
+Action: Calculate 37 million - 32 million
+Observation: The difference is 5 million.
+Answer: The population difference between Tokyo and Delhi is approximately 5 million people.</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prompt Engineering Projects -->
+    <section class="pe-projects" id="pe-projects">
+        <div class="container">
+            <h2 class="section-title">Prompt Engineering Projects</h2>
+            
+            <div class="techniques-grid">
+                <!-- Project categories -->
+                <div class="prompt-categories">
+                    <div class="prompt-category">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1655713949210-40c0d7acb04a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Prompt Framework">
+                        </div>
+                        <h3>Prompt Engineering Framework</h3>
+                        <p>Systematic methodology for creating effective prompts</p>
+                        <a href="projects/prompt-framework.html" class="btn small-btn">View Project</a>
+                    </div>
+                    
+                    <div class="prompt-category">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="LLM Assistant">
+                        </div>
+                        <h3>LLM Fine-tuning Assistant</h3>
+                        <p>Tool to generate optimal datasets for fine-tuning</p>
+                        <a href="projects/llm-assistant.html" class="btn small-btn">View Project</a>
+                    </div>                  
+
+                    <div class="prompt-category">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Data Processing Agent">
+                        </div>
+                        <h3>Data Processing Agent</h3>
+                        <p>Specialized prompts for data cleaning and analysis</p>
+                        <a href="projects/data-agent.html" class="btn small-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="case-studies">
+        <div class="container">
+            <h2 class="section-title">Prompt Engineering Case Studies</h2>
+            
+            <div class="case-study">
+                <div class="case-study-header">
+                    <h3>Financial Data Analysis Automation</h3>
+                    <p class="case-meta">Industry: Finance | Models: GPT-4, Claude 2</p>
+                </div>
+                
+                <div class="case-study-content">
+                    <div class="case-challenge">
+                        <h4>Challenge</h4>
+                        <p>A financial services company needed to automate the extraction and analysis of key metrics from quarterly earnings reports across hundreds of companies. Manual extraction was time-consuming and error-prone.</p>
+                    </div>
+                    
+                    <div class="case-solution">
+                        <h4>Solution</h4>
+                        <p>I designed a complex prompt structure that combined few-shot examples with structured Chain-of-Thought reasoning to guide the model through recognizing patterns in financial documents. The system included:</p>
+                        <ul>
+                            <li>Context enrichment with financial terminology definitions</li>
+                            <li>Multi-stage processing pipeline with validation checks</li>
+                            <li>Specialized JSON output formatting for downstream systems</li>
+                            <li>Self-correction mechanisms for numerical accuracy</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-results">
+                        <h4>Results</h4>
+                        <p>The prompt engineering approach reduced analysis time by 83% while improving accuracy by 17% compared to the previous manual process. The structured output enabled seamless integration with the company's existing data pipeline.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="case-divider"></div>
+            
+            <div class="case-study">
+                <div class="case-study-header">
+                    <h3>Medical Research Literature Reviews</h3>
+                    <p class="case-meta">Industry: Healthcare | Models: Claude 2, GPT-4</p>
+                </div>
+                
+                <div class="case-study-content">
+                    <div class="case-challenge">
+                        <h4>Challenge</h4>
+                        <p>A research team needed to synthesize findings across thousands of medical papers on a specific treatment. Traditional methods were too slow for the pace of publication.</p>
+                    </div>
+                    
+                    <div class="case-solution">
+                        <h4>Solution</h4>
+                        <p>I developed a specialized prompt framework that implemented:</p>
+                        <ul>
+                            <li>Hierarchical analysis patterns for breaking down complex papers</li>
+                            <li>Expert role prompting with domain-specific guardrails</li>
+                            <li>ReAct methodology for tracking citation validity</li>
+                            <li>Confidence scoring for findings to prioritize further human review</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-results">
+                        <h4>Results</h4>
+                        <p>The prompt engineering system enabled the researchers to process 5x more papers in the same timeframe, identifying several previously overlooked connections between studies that led to new research directions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section">
+        <div class="container">
+            <h2 class="section-title">Prompt Engineering Resources</h2>
+            
+            <div class="techniques-grid">
+                <div class="resource-card">
+                    <h3>Recommended Reading</h3>
+                    <ul>
+                        <li><a href="#" target="_blank">Prompt Engineering Guide by Nvidia</a></li>
+                        <li><a href="#" target="_blank">Chain-of-Thought Prompting Elicits Reasoning (Google Research)</a></li>
+                        <li><a href="#" target="_blank">The Art of Prompt Engineering (OpenAI)</a></li>
+                        <li><a href="#" target="_blank">LangChain Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>Tools & Frameworks</h3>
+                    <ul>
+                        <li><a href="#" target="_blank">LangChain</a> - Framework for developing applications with LLMs</li>
+                        <li><a href="#" target="_blank">PromptPerfect</a> - Tool for optimizing and testing prompts</li>
+                        <li><a href="#" target="_blank">Chainlit</a> - Building chatbot interfaces with LLMs</li>
+                        <li><a href="#" target="_blank">Promptify</a> - Python package for prompt engineering</li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <h3>Courses & Tutorials</h3>
+                    <ul>
+                        <li><a href="#" target="_blank">Prompt Engineering for Developers (DeepLearning.AI)</a></li>
+                        <li><a href="#" target="_blank">Building Systems with the ChatGPT API</a></li>
+                        <li><a href="#" target="_blank">Langchain for LLM Application Development</a></li>
+                        <li><a href="#" target="_blank">LLM Bootcamp - Full Stack Deep Learning</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="contact-preview">
+        <div class="container">
+            <h2>Need Custom Prompt Engineering Solutions?</h2>
+            <p>If you're looking to leverage AI language models for your specific business needs, let's discuss how prompt engineering can help.</p>
+            <a href="contact.html" class="btn primary-btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Ashhar Farooqui</h3>
+                <p>Data Scientist & Prompt Engineer</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                        <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                        <li><a href="mailto:your.email@example.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ashhar Farooqui. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/components/hero-animation.js"></script>
+    <script src="js/components/footer.js"></script>
+    <!-- Prism.js for code highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html> 
